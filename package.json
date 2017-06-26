@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/evalaidc/highcharts/issues"
   },
-  "homepage": "https://github.com/evalaidc/highcharts#readme"
+  "homepage": "https://github.com/evalaidc/highcharts#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
 }
