@@ -24,4 +24,11 @@ angular
         url: "/",
         templateUrl: "js/ng-views/home.html"
       })
+      .state("dataIndex", {
+        url: "/data",
+        templateUrl: "js/ng-views/data/index.html",
+        controller: "dataIndexCtrl",
+        controllerAs: "vm"
+      })
+      $urlRouterProvider.otherwise("data")
   }
