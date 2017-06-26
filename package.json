@@ -1,0 +1,19 @@
+{
+  "name": "highcharts",
+  "version": "1.0.0",
+  "description": "The purpose of this project is to practice the use of Highcharts.js.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evalaidc/highcharts.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evalaidc/highcharts/issues"
+  },
+  "homepage": "https://github.com/evalaidc/highcharts#readme"
+}
