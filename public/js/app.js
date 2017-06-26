@@ -8,13 +8,8 @@ angular
     "$urlRouterProvider",
     RouterFunction
   ])
-  .factory("DataFactory", [
-    "$resource",
-    DataFactoryFunction
-  ])
   .controller("DataIndexCtrl", [
     "$state",
-    "DataFactory",
     DataIndexControllerFunction
   ])
 
@@ -33,11 +28,10 @@ angular
       $urlRouterProvider.otherwise("data")
   }
 
-  function DataFactoryFunction($resource) {
-    return $resource("api.census.gov/data/2013/language?get=EST,LANLABEL,NAME&for=state:06&LAN=625", {}, {
-    })
-  }
+  // function DataFactoryFunction($resource) {
+  //   return $resource("", {}, {
+  //   })
+  // }
 
-  function DataIndexControllerFunction($state, DataFactory) {
-    this.data = DataFactory.query();
+  function DataIndexControllerFunction($state) {
   }
